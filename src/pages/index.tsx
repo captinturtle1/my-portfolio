@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className='w-screen h-screen flex bg-slate-900 text-white'>
       <Head>
-        <title>captinturtle portfolio</title>
+        <title>captinturtle's portfolio</title>
       </Head>
       <div className='m-auto flex flex-col lg:flex-row gap-16'>
         <Image alt='Profile Picture' src={pfp} className='rounded-2xl drop-shadow-lg m-auto lg:m-auto'/>
