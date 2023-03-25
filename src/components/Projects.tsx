@@ -22,38 +22,39 @@ export default function Projects() {
     }
 
     return (
-        <div className='w-screen h-[1500px] lg:h-[2000px] flex flex-col bg-slate-800 text-white p-16 overflow-hidden'>
-            <div className='mx-auto text-4xl text-white font-semibold p-16'>Projects</div>
-            <div className='flex flex-col gap-16 lg:gap-32'>
+        <div className=' w-screen h-[1500px] lg:h-[2000px] p-16 flex flex-col text-white overflow-hidden relative'>
+            <div className='absolute w-[200%] h-[200%] -left-[50%] -top-[50%] bg-gradient-to-br from-gray-700 via-gray-900 to-black'/>
+            <div className='mx-auto text-3xl lg:text-6xl text-white font-semibold p-16 z-20'>Projects</div>
+            <div className='flex flex-col gap-16 lg:gap-32 z-10'>
                 {projectDetails.map((project, index) => 
                     <div onClick={() => handleExpansion(index)} className={
                         project.name == 'Abyss' ? 
                             (expanded == index ? 
-                                'mx-auto bg-[#E2C05E] -translate-x-1 -translate-y-1 lg:w-[800px] h-[620px] rounded-3xl rounded-tl-[30px] cursor-pointer transition-all' : 
-                                'mx-auto bg-[#E2C05E] translate-x-0 translate-y-0 hover:-translate-x-1 hover:-translate-y-1 lg:w-[800px] h-32 lg:h-[250px] rounded-3xl rounded-l-[30px] cursor-pointer transition-all'
+                                'mx-auto bg-[#E2C05E] lg:w-[800px] h-[650px] bg-opacity-100 border p-4 border-[#E2C05E] rounded-3xl rounded-tl-[30px] cursor-pointer transition-all' : 
+                                'mx-auto bg-[#E2C05E] lg:w-[800px] h-32 lg:h-[250px] bg-opacity-50 hover:bg-opacity-60 backdrop-blur-lg border p-4 border-[#E2C05E] rounded-3xl rounded-l-[30px] cursor-pointer transition-all'
                             ) :
                             project.name == 'Minty' ? 
                                 (expanded == index ? 
-                                    'mx-auto bg-[#305187] -translate-x-1 -translate-y-1 lg:w-[800px] h-[600px] rounded-3xl rounded-tl-[30px] cursor-pointer transition-all' : 
-                                    'mx-auto bg-[#305187] translate-x-0 translate-y-0 hover:-translate-x-1 hover:-translate-y-1 lg:w-[800px] h-32 lg:h-[250px] rounded-3xl rounded-l-[30px] cursor-pointer transition-all'
+                                    'mx-auto bg-[#305187] lg:w-[800px] h-[620px] bg-opacity-100 border p-4 border-[#305187] rounded-3xl rounded-tl-[30px] cursor-pointer transition-all' : 
+                                    'mx-auto bg-[#305187] lg:w-[800px] h-32 lg:h-[250px] bg-opacity-50 hover:bg-opacity-60 backdrop-blur-lg border p-4 border-[#305187] rounded-3xl rounded-l-[30px] cursor-pointer transition-all'
                                 ) :
                                 project.name == 'JPEG Squared' ? 
                                     (expanded == index ? 
-                                        'mx-auto bg-[#2E0910] -translate-x-1 -translate-y-1 lg:w-[800px] h-[600px] rounded-3xl rounded-tl-[30px] cursor-pointer transition-all' : 
-                                        'mx-auto bg-[#2E0910] translate-x-0 translate-y-0 hover:-translate-x-1 hover:-translate-y-1 lg:w-[800px] h-32 lg:h-[250px] rounded-3xl rounded-l-[30px] cursor-pointer transition-all'
+                                        'mx-auto bg-[#2E0910] lg:w-[800px] h-[620px] bg-opacity-100 border p-4 border-[#2E0910] rounded-3xl rounded-tl-[30px] cursor-pointer transition-all' : 
+                                        'mx-auto bg-[#2E0910] lg:w-[800px] h-32 lg:h-[250px] bg-opacity-50 hover:bg-opacity-60 backdrop-blur-lg border p-4 border-[#2E0910] rounded-3xl rounded-l-[30px] cursor-pointer transition-all'
                                     ) :
                                     project.name == 'Yogurt Verse' ? 
                                         (expanded == index ? 
-                                            'mx-auto bg-[#D1737F] -translate-x-1 -translate-y-1 lg:w-[800px] h-[620px] rounded-3xl rounded-tl-[30px] cursor-pointer transition-all' : 
-                                            'mx-auto bg-[#D1737F] translate-x-0 translate-y-0 hover:-translate-x-1 hover:-translate-y-1 lg:w-[800px] h-32 lg:h-[250px] rounded-3xl rounded-l-[30px] cursor-pointer transition-all'
+                                            'mx-auto bg-[#D1737F] lg:w-[800px] h-[650px] bg-opacity-100 border p-4 border-[#D1737F] rounded-3xl rounded-tl-[30px] cursor-pointer transition-all' : 
+                                            'mx-auto bg-[#D1737F] lg:w-[800px] h-32 lg:h-[250px] bg-opacity-50 hover:bg-opacity-60 backdrop-blur-lg border p-4 border-[#D1737F] rounded-3xl rounded-l-[30px] cursor-pointer transition-all'
                                         ) :
                                         (expanded == index ? 
-                                            'mx-auto bg-[#305187] -translate-x-1 -translate-y-1 lg:w-[800px] h-[600px] rounded-3xl rounded-tl-[30px] cursor-pointer transition-all' : 
-                                            'mx-auto bg-[#305187] translate-x-0 translate-y-0 hover:-translate-x-1 hover:-translate-y-1 lg:w-[800px] h-32 lg:h-[250px] rounded-3xl rounded-l-[30px] cursor-pointer transition-all'
+                                            'mx-auto bg-[#305187] lg:w-[800px] h-[620px] bg-opacity-100 border p-4 border-[#305187] rounded-3xl rounded-tl-[30px] cursor-pointer transition-all' : 
+                                            'mx-auto bg-[#305187] lg:w-[800px] h-32 lg:h-[250px] bg-opacity-50 hover:bg-opacity-60 backdrop-blur-lg border p-4 border-[#305187] rounded-3xl rounded-l-[30px] cursor-pointer transition-all'
                                         )}>
                         <div className='flex'>
-                            <Image alt='Minty logo' src={project.logo} className='h-32 w-32 lg:h-[250px] lg:w-[250px] rounded-3xl'/>
-                            <div className='lg:mt-8 p-8 md:p-6 lg:p-8 select-none'>
+                            <Image alt='Minty logo' src={project.logo} className='h-24 w-24 lg:h-[220px] lg:w-[220px] rounded-3xl'/>
+                            <div className='lg:mt-5 p-4 md:p-2 md:px-8 lg:p-8 select-none'>
                                 <div className='text-xl md:text-4xl lg:text-7xl font-bold mb-4'>{project.name}</div>
                                 <div className='text-sm md:text-lg lg:text-2xl font-semibold'>{project.tags}</div>
                             </div>
@@ -65,7 +66,7 @@ export default function Projects() {
                             {project.websiteURL != '' ? (
                                 <div className='flex mt-8 font-bold text-lg'>
                                     <a href={project.websiteURL} className='flex translate-x-0 hover:translate-x-2 transition-all'>
-                                        Visit site <BiRightArrowAlt className='mt-[6px]'/>
+                                        Visit site <BiRightArrowAlt className='mt-2'/>
                                     </a>
                                 </div>
                             ):(<></>)}
