@@ -22,12 +22,12 @@ export default function Projects() {
     }
 
     return (
-        <div className=' w-screen h-[1500px] lg:h-[2000px] p-16 flex flex-col text-white overflow-hidden relative'>
+        <div className=' w-screen h-[1500px] lg:h-[2200px] p-16 flex flex-col text-white overflow-hidden relative'>
             <div className='absolute w-[200%] h-[200%] -left-[50%] -top-[50%] bg-gradient-to-br from-gray-700 via-gray-900 to-black'/>
             <div className='mx-auto text-3xl lg:text-6xl text-white font-semibold p-16 z-20'>Projects</div>
             <div className='flex flex-col gap-16 lg:gap-32 z-10'>
                 {projectDetails.map((project, index) => 
-                    <div onClick={() => handleExpansion(index)} className={
+                    <div key={project.name} onClick={() => handleExpansion(index)} className={
                         project.name == 'Abyss' ? 
                             (expanded == index ? 
                                 'mx-auto bg-[#E2C05E] lg:w-[800px] h-[730px] lg:h-[680px] bg-opacity-100 border p-4 border-[#E2C05E] rounded-3xl rounded-tl-[30px] cursor-pointer transition-all' : 

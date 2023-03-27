@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className='w-screen h-screen bg-slate-900 text-white'>
       <Head>
-        <title>captinturtle's portfolio</title>
+        <title>My Portfolio</title>
       </Head>
       <Hero/>
       <Projects/>
