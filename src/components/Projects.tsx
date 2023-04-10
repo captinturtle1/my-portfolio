@@ -22,7 +22,7 @@ export default function Projects() {
     }
 
     return (
-        <div className=' w-screen h-[1500px] lg:h-[2200px] p-16 flex flex-col text-white overflow-hidden relative'>
+        <div className=' w-screen h-[1800px] lg:h-[2500px] p-16 flex flex-col text-white overflow-hidden relative'>
             <div className='absolute w-[200%] h-[200%] -left-[50%] -top-[50%] bg-gradient-to-br from-gray-700 via-gray-900 to-black'/>
             <div className='mx-auto text-3xl lg:text-6xl text-white font-semibold p-16 z-20'>Projects</div>
             <div className='flex flex-col gap-16 lg:gap-32 z-10'>
@@ -33,25 +33,26 @@ export default function Projects() {
                                 'mx-auto bg-[#E2C05E] lg:w-[800px] h-[730px] lg:h-[680px] bg-opacity-100 border p-4 border-[#E2C05E] rounded-3xl rounded-tl-[30px] cursor-pointer transition-all' : 
                                 'mx-auto bg-[#E2C05E] lg:w-[800px] h-32 lg:h-[250px] bg-opacity-50 hover:bg-opacity-60 backdrop-blur-lg border p-4 border-[#E2C05E] rounded-3xl rounded-l-[30px] cursor-pointer transition-all'
                             ) :
-                            project.name == 'Minty' ? 
+                            project.name == 'otk.lol' ? 
                                 (expanded == index ? 
-                                    'mx-auto bg-[#305187] lg:w-[800px] h-[650px] lg:h-[620px] bg-opacity-100 border p-4 border-[#305187] rounded-3xl rounded-tl-[30px] cursor-pointer transition-all' : 
-                                    'mx-auto bg-[#305187] lg:w-[800px] h-32 lg:h-[250px] bg-opacity-50 hover:bg-opacity-60 backdrop-blur-lg border p-4 border-[#305187] rounded-3xl rounded-l-[30px] cursor-pointer transition-all'
+                                    'mx-auto bg-[#FFC31F] lg:w-[800px] h-[730px] lg:h-[680px] bg-opacity-100 border p-4 border-[#FFC31F] rounded-3xl rounded-tl-[30px] cursor-pointer transition-all' : 
+                                    'mx-auto bg-[#FFC31F] lg:w-[800px] h-32 lg:h-[250px] bg-opacity-50 hover:bg-opacity-60 backdrop-blur-lg border p-4 border-[#FFC31F] rounded-3xl rounded-l-[30px] cursor-pointer transition-all'
                                 ) :
-                                project.name == 'JPEG Squared' ? 
+                                project.name == 'Minty' ? 
                                     (expanded == index ? 
-                                        'mx-auto bg-[#2E0910] lg:w-[800px] h-[530px] bg-opacity-100 border p-4 border-[#2E0910] rounded-3xl rounded-tl-[30px] cursor-pointer transition-all' : 
-                                        'mx-auto bg-[#2E0910] lg:w-[800px] h-32 lg:h-[250px] bg-opacity-50 hover:bg-opacity-60 backdrop-blur-lg border p-4 border-[#2E0910] rounded-3xl rounded-l-[30px] cursor-pointer transition-all'
+                                        'mx-auto bg-[#305187] lg:w-[800px] h-[650px] lg:h-[620px] bg-opacity-100 border p-4 border-[#305187] rounded-3xl rounded-tl-[30px] cursor-pointer transition-all' : 
+                                        'mx-auto bg-[#305187] lg:w-[800px] h-32 lg:h-[250px] bg-opacity-50 hover:bg-opacity-60 backdrop-blur-lg border p-4 border-[#305187] rounded-3xl rounded-l-[30px] cursor-pointer transition-all'
                                     ) :
-                                    project.name == 'Yogurt Verse' ? 
+                                    project.name == 'JPEG Squared' ? 
                                         (expanded == index ? 
-                                            'mx-auto bg-[#D1737F] lg:w-[800px] h-[750px] lg:h-[700px] bg-opacity-100 border p-4 border-[#D1737F] rounded-3xl rounded-tl-[30px] cursor-pointer transition-all' : 
-                                            'mx-auto bg-[#D1737F] lg:w-[800px] h-32 lg:h-[250px] bg-opacity-50 hover:bg-opacity-60 backdrop-blur-lg border p-4 border-[#D1737F] rounded-3xl rounded-l-[30px] cursor-pointer transition-all'
+                                            'mx-auto bg-[#2E0910] lg:w-[800px] h-[530px] bg-opacity-100 border p-4 border-[#2E0910] rounded-3xl rounded-tl-[30px] cursor-pointer transition-all' : 
+                                            'mx-auto bg-[#2E0910] lg:w-[800px] h-32 lg:h-[250px] bg-opacity-50 hover:bg-opacity-60 backdrop-blur-lg border p-4 border-[#2E0910] rounded-3xl rounded-l-[30px] cursor-pointer transition-all'
                                         ) :
-                                        (expanded == index ? 
-                                            'mx-auto bg-[#305187] lg:w-[800px] h-[620px] bg-opacity-100 border p-4 border-[#305187] rounded-3xl rounded-tl-[30px] cursor-pointer transition-all' : 
-                                            'mx-auto bg-[#305187] lg:w-[800px] h-32 lg:h-[250px] bg-opacity-50 hover:bg-opacity-60 backdrop-blur-lg border p-4 border-[#305187] rounded-3xl rounded-l-[30px] cursor-pointer transition-all'
-                                        )}>
+                                        project.name == 'Yogurt Verse' ? 
+                                            (expanded == index ? 
+                                                'mx-auto bg-[#D1737F] lg:w-[800px] h-[750px] lg:h-[700px] bg-opacity-100 border p-4 border-[#D1737F] rounded-3xl rounded-tl-[30px] cursor-pointer transition-all' : 
+                                                'mx-auto bg-[#D1737F] lg:w-[800px] h-32 lg:h-[250px] bg-opacity-50 hover:bg-opacity-60 backdrop-blur-lg border p-4 border-[#D1737F] rounded-3xl rounded-l-[30px] cursor-pointer transition-all'
+                                            ) : <></>}>
                         <div className='flex'>
                             <Image alt='Minty logo' src={project.logo} className='h-24 w-24 lg:h-[220px] lg:w-[220px] rounded-3xl'/>
                             <div className='lg:mt-5 p-4 md:p-2 md:px-8 lg:p-8 select-none'>
