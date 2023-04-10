@@ -52,7 +52,7 @@ export default function Projects() {
                                             (expanded == index ? 
                                                 'mx-auto bg-[#D1737F] lg:w-[800px] h-[750px] lg:h-[700px] bg-opacity-100 border p-4 border-[#D1737F] rounded-3xl rounded-tl-[30px] cursor-pointer transition-all' : 
                                                 'mx-auto bg-[#D1737F] lg:w-[800px] h-32 lg:h-[250px] bg-opacity-50 hover:bg-opacity-60 backdrop-blur-lg border p-4 border-[#D1737F] rounded-3xl rounded-l-[30px] cursor-pointer transition-all'
-                                            ) : <></>}>
+                                            ) : ''}>
                         <div className='flex'>
                             <Image alt='Minty logo' src={project.logo} className='h-24 w-24 lg:h-[220px] lg:w-[220px] rounded-3xl'/>
                             <div className='lg:mt-5 p-4 md:p-2 md:px-8 lg:p-8 select-none'>
