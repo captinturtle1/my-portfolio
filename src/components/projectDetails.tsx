@@ -24,7 +24,7 @@ export const projectDetails = [
         logo: abyssLogo,
         desc: 'Abyss is a paid exclusive community that provides information on upcoming NFT and	Crypto projects.\n\nCreated a membership system in which users would pay monthly to have access to a discord group using an ethereum wallet\n\nBuilt a website and user dashboard that allows members to check their subscription status and pay for their membership.',
         tags: 'Front-end · Back-end',
-        websiteURL: 'https://main.d2se3bd9jk97yv.amplifyapp.com/'
+        websiteURL: 'https://www.abyssfnf.com/'
     },
     {
         name: 'Yogurt Verse',
