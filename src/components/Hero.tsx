@@ -6,7 +6,7 @@ import pfp from '../../public/me.jpg';
 
 export default function Home() {
   return (
-    <div className='w-screen h-screen min-h-[1000px] flex bg-red-400 text-white'>
+    <div className='w-screen flex p-32 bg-red-400 text-white'>
       <div className='m-auto flex flex-col lg:flex-row gap-16'>
         <Image alt='Profile Picture' quality={100} src={pfp} className='rounded-2xl w-96 drop-shadow-lg m-auto lg:m-auto'/>
         <div className='flex flex-col gap-5 my-auto max-w-[600px]'>
