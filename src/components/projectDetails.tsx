@@ -31,6 +31,6 @@ export const projectDetails = [
         logo: yvLogo,
         desc: 'Yogurt Verse is an NFT project in which people could buy a generative picture and lock their asset in order to gain access to an exclusive group or keep it unlocked to have it listed on a marketplace.\n\nCreated contracts to allow users to buy and then stake their tokens via a user dashboard on the project webpage.\n\nBuilt custom Discord bot to check users total staked time across tokens and add Discord roles depending on staked time.',
         tags: 'Front-end · Back-end',
-        websiteURL: 'https://www.yogurtverse.xyz/'
+        websiteURL: 'https://main.d2vm3linp7dux4.amplifyapp.com/'
     },
 ]
