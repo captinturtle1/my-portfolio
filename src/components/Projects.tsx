@@ -14,7 +14,7 @@ export default function Projects() {
     return (
         <div className=' w-screen p-16 flex flex-col text-white overflow-hidden relative'>
             <div className='absolute w-[200%] h-[200%] -left-[50%] -top-[50%] bg-gradient-to-br from-gray-700 via-gray-900 to-black'/>
-            <div className='mx-auto text-3xl lg:text-6xl text-white font-semibold p-16 z-20'>Projects</div>
+            <h1 className='mx-auto text-3xl lg:text-6xl text-white font-semibold p-16 z-20'>Projects</h1>
             <div className='flex flex-col gap-16 lg:gap-32 z-10'>
                 {projectDetails.map((project, index) => 
                     <div key={project.name} className={
@@ -28,18 +28,18 @@ export default function Projects() {
                         <div className='flex'>
                             <Image alt='Project Logo' src={project.logo} className='h-24 w-24 lg:h-[220px] lg:w-[220px] rounded-3xl'/>
                             <div className='lg:mt-5 p-4 md:p-2 md:px-8 lg:p-8 select-none'>
-                                <div className='text-xl md:text-4xl lg:text-7xl font-bold mb-4'>{project.name}</div>
-                                <div className='text-sm md:text-lg lg:text-xl font-semibold'>{project.tags}</div>
+                                <h1 className='text-xl md:text-4xl lg:text-7xl font-bold mb-4'>{project.name}</h1>
+                                <h2 className='text-sm md:text-lg lg:text-xl font-semibold'>{project.tags}</h2>
                             </div>
                         </div>
                         <div className='mx-16 mt-8 text-sm  md:text-xl visible opacity-100 transition-all duration-300'>
-                            <div className='whitespace-pre-wrap'>{project.desc}</div>
+                            <p className='whitespace-pre-wrap'>{project.desc}</p>
                             {project.websiteURL != '' ? (
-                                <div className='flex mt-8 font-bold text-lg'>
-                                    <a href={project.websiteURL} className='flex translate-x-0 hover:translate-x-2 transition-all'>
+                                <button type='button' className='flex mt-8 font-bold text-lg'>
+                                    <a href={project.websiteURL} target='_blank' className='flex translate-x-0 hover:translate-x-2 transition-all'>
                                         Visit site <BiRightArrowAlt className='mt-2'/>
                                     </a>
-                                </div>
+                                </button>
                             ):(<></>)}
                         </div>
                     </div>
