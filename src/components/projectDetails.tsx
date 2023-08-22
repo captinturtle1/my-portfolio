@@ -20,7 +20,7 @@ export const projectDetails = [
         websiteURL: 'https://otk.lol/'
     },
     {
-        name: 'Who Is Live',
+        name: 'Is Anyone Live',
         logo: whoisliveLogo,
         desc: 'Who Is Live is a website that allows users to create lists of streamers across Twitch, Youtube, and Kick. Users have a dashboard to see which of their favorite streamers are currently live and various other details such as view count, current title, and a link to the stream. \n\nThe website uses a custom Express API that uses Puppeteer to scrape needed data from various pages to display on the dashboard.',
         tags: 'Javascript · React · ExpressJS · Puppeteer · AWS EC2 ',
