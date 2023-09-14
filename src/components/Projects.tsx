@@ -28,12 +28,13 @@ export default function Projects() {
                         <div className='flex'>
                             <Image alt='Project Logo' src={project.logo} className='h-24 w-24 lg:h-[220px] lg:w-[220px] rounded-3xl'/>
                             <div className='lg:mt-5 p-4 md:p-2 md:px-8 lg:p-8 select-none'>
-                                <h1 className='text-xl md:text-4xl lg:text-7xl font-bold mb-4'>{project.name}</h1>
+                                <h1 className='text-xl md:text-4xl lg:text-5xl font-bold mb-4'>{project.name}</h1>
                                 <h2 className='text-sm md:text-lg lg:text-xl font-semibold'>{project.tags}</h2>
                             </div>
                         </div>
                         <div className='mx-16 mt-8 text-sm  md:text-xl visible opacity-100 transition-all duration-300'>
                             <p className='whitespace-pre-wrap'>{project.desc}</p>
+                            <div className='flex gap-4'>
                             {project.websiteURL != '' ? (
                                 <button type='button' className='flex mt-8 font-bold text-lg'>
                                     <a href={project.websiteURL} target='_blank' className='flex translate-x-0 hover:translate-x-2 transition-all'>
@@ -41,6 +42,14 @@ export default function Projects() {
                                     </a>
                                 </button>
                             ):(<></>)}
+                            {project.repoURL != '' ? (
+                                <button type='button' className='flex mt-8 font-bold text-lg'>
+                                    <a href={project.repoURL} target='_blank' className='flex translate-x-0 hover:translate-x-2 transition-all'>
+                                        Visit Repo <BiRightArrowAlt className='mt-2'/>
+                                    </a>
+                                </button>
+                            ):(<></>)}
+                            </div>
                         </div>
                     </div>
                 )}
