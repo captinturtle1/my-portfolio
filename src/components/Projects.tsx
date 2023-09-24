@@ -12,7 +12,7 @@ import { BiRightArrowAlt } from 'react-icons/bi';
 
 export default function Projects() {
     return (
-        <div className=' w-screen p-16 flex flex-col text-white overflow-hidden relative'>
+        <div className=' w-screen p-4 lg:p-16 flex flex-col text-white overflow-hidden relative'>
             <div className='absolute w-[200%] h-[200%] -left-[50%] -top-[50%] bg-gradient-to-br from-gray-700 via-gray-900 to-black'/>
             <h1 className='mx-auto text-3xl lg:text-6xl text-white font-semibold p-16 z-20'>Projects</h1>
             <div className='flex flex-col gap-16 lg:gap-32 z-10'>
@@ -32,7 +32,7 @@ export default function Projects() {
                                 <h2 className='text-sm md:text-lg lg:text-xl font-semibold'>{project.tags}</h2>
                             </div>
                         </div>
-                        <div className='mx-16 mt-8 text-sm  md:text-xl visible opacity-100 transition-all duration-300'>
+                        <div className='mx-8 lg:mx-16 mt-8 text-sm  md:text-xl visible opacity-100 transition-all duration-300'>
                             <p className='whitespace-pre-wrap'>{project.desc}</p>
                             <div className='flex gap-4'>
                             {project.websiteURL != '' ? (
