@@ -1,38 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# My Personal Portfolio
+
+Welcome to my personal portfolio website built with Next.js, TailwindCSS, and TypeScript.
 
 ## Getting Started
 
-First, run the development server:
+These instructions will help you set up a local development environment and run the application on your machine.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Make sure you have the following software installed on your machine:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### Installation
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1. Clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/captinturtle1/my-portfolio
+2. Navigate to the project directory:
+    ```bash
+    cd my-portfolio
+3. Install dependencies:
+    ```bash
+    npm install
+### Development Environment
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+To run the development environment, use the following command:
+    
+    npm run dev
 
-## Learn More
+This will start the development server, and you can view your website at http://localhost:3000.
+Building the Application
 
-To learn more about Next.js, take a look at the following resources:
+To create a production-ready build, use the following command:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    npm run build
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Running the Application
 
-## Deploy on Vercel
+Once the build is complete, you can start the application with the following command:
+    
+    npm start
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This will start the server in production mode.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Built With
+
+* [Next.js](https://nextjs.org/) - React framework for building server-rendered applications.
+* [TailwindCSS](https://tailwindcss.com/) - A utility-first CSS framework.
+* [TypeScript](https://www.typescriptlang.org/) - A superset of JavaScript that adds static typing.
+
+
+## License
+
+This project is licensed under the MIT License.
