@@ -34,7 +34,7 @@ export const projectDetails = [
         logo: abyssLogo,
         desc: 'Abyss is a paid exclusive community that provides information on upcoming NFT and	Crypto projects.\n\nCreated a membership system in which users would pay monthly to have access to a discord group using an Ethereum wallet\n\nBuilt a website and user dashboard that allows members to check their subscription status and pay for their membership.',
         tags: 'Typescript · Solidity · React · NextJS · EthersJS · AWS Amplify',
-        websiteURL: 'https://www.abyssfnf.com/',
+        websiteURL: 'https://main.d1uyofadic6mql.amplifyapp.com/',
         repoURL: 'https://github.com/captinturtle1/jpeg-site-3'
     },
     {
