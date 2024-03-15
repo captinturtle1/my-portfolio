@@ -19,7 +19,7 @@ export default function Projects() {
                 {projectDetails.map((project, index) => 
                     <div key={project.name} className={
                         project.name == 'Abyss' ? 'mx-auto bg-[#E2C05E] lg:w-[800px] bg-opacity-50 border p-4 pb-8 border-[#E2C05E] rounded-3xl' : 
-                        project.name == 'otk.lol' ? 'mx-auto bg-[#FFC31F] lg:w-[800px] bg-opacity-50 border p-4 pb-8 border-[#FFC31F] rounded-3xl' :  
+                        project.name == 'OTK Dashboard' ? 'mx-auto bg-[#FFC31F] lg:w-[800px] bg-opacity-50 border p-4 pb-8 border-[#FFC31F] rounded-3xl' :  
                         project.name == 'Minty' ? 'mx-auto bg-[#305187] lg:w-[800px] bg-opacity-50 border p-4 pb-8 border-[#305187] rounded-3xl' : 
                         project.name == 'Yogurt Verse' ? 'mx-auto bg-[#D1737F] lg:w-[800px] bg-opacity-50 border p-4 pb-8 border-[#D1737F] rounded-3xl' : 
                         project.name == 'Is Anyone Live' ? 'mx-auto bg-[#305187] lg:w-[800px] bg-opacity-50 border p-4 pb-8 border-[#305187] rounded-3xl' : 
