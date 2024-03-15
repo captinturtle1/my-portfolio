@@ -22,11 +22,11 @@ export const projectDetails = [
         repoURL: 'https://github.com/captinturtle1/minty-desktop/'
     },
     {
-        name: 'otk.lol',
+        name: 'OTK Dashboard',
         logo: otkLogo,
         desc: 'A non-official dashboard for the content org OTK. Pulls information for each creator from Twitch and displays viewer count and live status on the sidebar.\n\nThe videos section pulls from Youtube to display the most recent video from each creator.\n\nDisplays various other information such as upcoming events, merch store, and each member\'s social links.',
         tags: 'Javascript · React · NextJS · AWS Amplify',
-        websiteURL: 'https://otk.lol/',
+        websiteURL: 'https://main.d30s79gslbhyrg.amplifyapp.com',
         repoURL: 'https://github.com/captinturtle1/otk-website'
     },
     {
