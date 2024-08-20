@@ -10,7 +10,7 @@ export const projectDetails = [
         logo: whoisliveLogo,
         desc: 'Is Anyone Live is a website that allows users to create lists of streamers across Twitch, Youtube, and Kick. Users have a dashboard to see which of their favorite streamers are currently live and various other details such as view count, current title, and a link to the stream. \n\nThe website uses an AWS Lambda API that uses Puppeteer to scrape needed data from various pages to display on the dashboard.',
         tags: 'Javascript · React · Puppeteer · GCP Cloud Run',
-        websiteURL: 'https://isanyone.live/',
+        websiteURL: 'https://isanyonelive.xyz/',
         repoURL: 'https://github.com/captinturtle1/who_is_live_app'
     },
     {
